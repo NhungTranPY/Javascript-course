@@ -3,21 +3,15 @@ let currentResult = defaultResult
 
 function add(num1, num2) {
     const result = num1 + num2
-    alert(`The result is ${result}`)
+    // alert(`The result is ${result}`)
     // alert('The result is' + result) // same as above, different syntax (written)
+    return result
 }
 
-add(1, 4)
-add(4, 7)
+// const additionResult = add(1, 4)
+// currentResult = additionResult 
+// 2 dong tren co the viet nhu sau:
+currentResult = add(1, 4)
 
-currentResult = (currentResult + 10) * 3 / 2 - 1
-
-let calculationDescription = '(currentResult + 10) * 3 / 2 - 1'
-
-let calculationDescription2 = '(' + defaultResult + ' 10) * 3 / 2 - 1'
-
-let calculationDescription3 = `( ${defaultResult} + 10) * 3 / 2 - 1` // same result as calculationDescription2
-let errorMessage = 'An error occured'
-
-outputResult(currentResult, calculationDescription3)
+outputResult(currentResult, '')
 
